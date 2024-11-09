@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #E8F3E8;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #ffffff;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #2F4F2F;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #3E663E;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2F4F2F;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #C1E1C1;
+            padding-bottom: 10px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .publication, .work-in-progress {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #C1E1C1;
+        }
+
+        .publication:last-child, .work-in-progress:last-child {
+            border-bottom: none;
+        }
+
+        .status-tag {
+            display: inline-block;
+            background-color: #E8F3E8;
+            color: #2F4F2F;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #2F4F2F;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #3E663E;
+        }
+
+        .cv-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background-color: #2F4F2F;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin: 20px 0;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .cv-button:hover {
+            background-color: #3E663E;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="photo/profile.jpg" alt="Profile Picture" class="profile-image">
+        <h1>Joseph O'Brien</h1>
+        <p>Ph.D. Student</p>
+        <p>University of California, San Diego</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#works-in-progress">Works in Progress</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my academic website. I am a Ph.D. student at UCSD working primarily in Philosophy of Science and Epistemology. Most of my projects can be captured by the catchphrase "formal tools for social phenomena." My research is largely split into two streams, one of which focuses on epistemic communities and their interactions with machine learning (ML) systems, while the other is a more traditional approach to the philosophy of science with a focus on the role of algorithmic tools in scientific theorizing. I primarily use methods from probability theory and agent-based modeling to explore group social dynamics and reasoning under risk. Much of my work is aimed at advocating for modeling and simulation as philosophical methods. Prior to philosophy, I did research in computational geography, using deep neural netowrk (DNNs) to explore environmental and social impacts on communities.</p>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Philosophy of Science</li>
+                <li>Formal and Social Epistemology</li>
+                <li>Agent-Based Modeling and Network Science</li>
+                <li>Probability and Randomness</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <div class="publication">
+                <strong>A multi-glimpse deep learning architecture to estimate socioeconomic census metrics in the context of extreme scope variance</strong>
+                <p>Runfola, Dan, Anthony Stefanidis, Zhonghui Lv, Joseph O'Brien, and Heather Baier (2024)</p>
+                <p>International Journal of Geographical Information Science </p>
+                <a href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2305636?scroll=top&needAccess=true#abstractf" class="download-button">Journal Site</a>
+            </div>
+            
+        </section>
+
+        <section id="works-in-progress">
+            <h2>Works in Progress</h2>
+            <div class="work-in-progress">
+                <strong>Searching for Signal in a Sea of Noise</strong>
+                <p>O'Brien, J. and Danks, D.</p>
+                <span class="status-tag">Draft in Progress</span>
+                <p style="margin-top: 10px;">This work argues for a pluralistic account of the signal-noise distinction.</p>
+            </div>
+            <div class="work-in-progress">
+                <strong>Algorithmic Tools and Scientific Communities</strong>
+                <p>O'Brien, J., Fazelpour, S., and Rubin, H.</p>
+                <span class="status-tag">Draft in Progress</span>
+                <p style="margin-top: 10px;">We explore the effects of AI usage on scientific communities through the NK Landscape model.</p>
+            </div>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <ul>
+                <li>PHIL 14: Intro to the Nature of Reality - Fall 24 (TA)</li>
+                <li>PHIL 120: Symbolic Logic - Fall 24 (TA)</li>
+            </ul>
+        </section>
+
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <div class="cv-container">
+                <p>Download my complete CV for detailed information about my academic background, research experience, publications, and achievements.</p>
+                <a href="cv/O'Brien_CV.pdf" class="cv-button">
+                    Download CV (PDF)
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: j3obrien[at]ucsd[dot]edu</p>
+            <p>Office: Ridge Walk Academic Complex, Office 0436</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Joseph O'Brien. Last updated: November 2024</p>
+    </footer>
+</body>
+</html>
