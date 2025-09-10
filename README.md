@@ -1,1 +1,1 @@
-# webby
+# simple one-page academic website
