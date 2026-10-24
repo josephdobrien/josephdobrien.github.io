@@ -159,6 +159,32 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
+        details.abstract {
+            margin-top: 12px;
+        }
+
+        details.abstract summary {
+            cursor: pointer;
+            color: #2F4F2F;
+            font-weight: 600;
+            font-size: 0.95em;
+            padding: 4px 0;
+        }
+
+        details.abstract summary:hover {
+            color: #3E663E;
+            text-decoration: underline;
+        }
+
+        details.abstract p {
+            margin-top: 8px;
+            padding: 10px 14px;
+            background-color: #E8F3E8;
+            border-left: 3px solid #2F4F2F;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.95em;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -224,21 +250,32 @@
                 <p>    Fazelpour, Sina; O'Brien, Joseph; Rubin, Hannah (2026)</p>
                 <p>Philosophy of Science </p>
                 <a href="https://www.cambridge.org/core/journals/philosophy-of-science/article/navigating-epistemic-monocultures-in-aidriven-science-a-simulation-study/651904B9A20DD37444E2F77DD8236886" class="download-button">Journal Site</a>
+                <details class="abstract">
+                    <summary>Abstract</summary>
+                    <p>AI integration into scientific communities promises accelerated discovery but raises concerns about detrimental homogenization. We develop an NK landscape model to explore these promises and risks.We find that non-personalized AI systems that offer uniform guidance yield benefits only under a narrow conjunction of problem structure, practices, and baseline research capabilities, becoming harmful otherwise. We implement two proposed mitigations: randomization and personalization. While randomization’s utility remains restricted to decomposable problems, personalization can enhance diversity, enabling benefits across a broader range of conditions. Crucially, these benefits are not automatic: they depend on effective institutional adaptation, requiring new standards, protocols, and practices.</p>
+                </details>
             </div>
             <div class="publication">
                 <strong>A Philosophical Introduction to In-Silico Clinical Trials</strong>
                 <p>    O'Brien, Joseph; Masotti, Joseph; Cartwright, Nancy (2026)</p>
                 <p>European Journal for Philosophy of Science </p>
                 <a href="https://link.springer.com/article/10.1007/s13194-026-00758-5" class="download-button">Journal Site</a>  
-                <a href="https://philpapers.org/rec/OBRAPI" class="download-button">Preprint</a>  
+                <a href="https://philpapers.org/rec/OBRAPI" class="download-button">Preprint</a>
+                <details class="abstract">
+                    <summary>Abstract</summary>
+                    <p>In-silico clinical trials (ISCTs) for medical devices and products are computer-based simulations of material clinical trials, often of randomized clinical trials (RCTs) on populations of ‘virtual’ patients. A major aim for developing ISCTs is to use them to complement (or potentially sometimes replace) material trials for providing evidence about the performance of medical products. While these methods are beginning to see use, especially as additional sources of evidence that regulatory agencies allow, they remain relatively under-theorized by philosophers of science. In this paper, we aim to introduce philosophers of science to ISCTs, focusing on ISCTs that generate results using knowledge-based models. Although we identify a number of areas in philosophy of science that we expect can make significant contributions in thinking about ISCTs, from work on measurement and models to that on computer simulations, our own offerings are on issues related to the use of RCTs themselves, like external and internal validity, and on the various regulatory standards for their use. Because of the practical importance of their use as evidence for effectiveness and safety by regulatory agencies, we focus most on how in-silico randomized control trials (ISRCTs) compare with material RCTs done on real patients, which most regulatory agencies see as the gold standard for evidence of intervention effectiveness. Our primary examples are of medical devices since this seems to be the area where suggestions for ISCT use is most developed. Our hope is that this introductory paper will prompt other philosophers of science to delve deeper into this extremely interesting and important area of applied science that can have real practical effects on our lives as ISCT results are increasingly allowed as evidence for medical effectiveness and safety.</p>
+                </details>
             </div>
             <div class="publication">
                 <strong>A multi-glimpse deep learning architecture to estimate socioeconomic census metrics in the context of extreme scope variance</strong>
                 <p>Runfola, Dan; Stefanidis, Anthony; Lv, Zhonghui; O'Brien, Joseph; Baier, Heather (2024)</p>
                 <p>International Journal of Geographical Information Science </p>
                 <a href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2305636?scroll=top&needAccess=true#abstractf" class="download-button">Journal Site</a>
+                <details class="abstract">
+                    <summary>Abstract</summary>
+                    <p>Convolutional Neural Networks (CNNs) are leveraged for a wide range of satellite imagery information extraction tasks. However, for tasks which seek to estimate aggregated information across highly variable geographic extents, existing techniques are subject to critical limitations. We engage with a specific case study exploring this challenge: estimating census variables across 2358 Mexican municipalities, which range in scope from 2.21 km2 (~74,000 30 m pixels) to 72,417.9 km2 (millions of pixels). Building on recent literature which has illustrated the capability of deep learning to extract socioeconomic information from satellite imagery, we specifically seek to establish baseline metrics of error that might be expected when estimating a range of census variables based on coarse-resolution (Landsat) satellite imagery alone. For each of 52 variables, we implement a multi-glimpse recurrent attention model, in which we parametrically determine subsets of each municipality to sample across iterative steps. Results of a five-fold validation indicate that nearly half of the tested variables (22) can be estimated with r2 values greater than 0.75. Results suggest considerable promise for the use of satellite imagery to estimate socioeconomic factors in both historic time periods for which surveys were not conducted, as well as contemporary inaccessible regions.</p>
+                </details>
             </div>
-            
         </section>
 
         <section id="works-in-progress">
@@ -247,16 +284,28 @@
                 <strong>Statistical Practice in the Sciences</strong>
                 <span class="status-tag">Under Review</span>
                 <p style="margin-top: 10px;">This work explores current statistical practice and its relations to traditional debates in philosophy of science.</p>
+                <details class="abstract">
+                    <summary>Abstract</summary>
+                    <p>This paper examines how statistical methods are actually used across the sciences and how current practice bears on traditional debates in the philosophy of science. <!-- TODO: replace with the paper's real abstract --></p>
+                </details>
             </div>
             <div class="work-in-progress">
                 <strong>Theoretical Virtues and Modern Machine Learning</strong>
                 <span class="status-tag">Draft in Progress</span>
                 <p style="margin-top: 10px;"> I argue that while many machine learning models appear to be massively complex at first glance, our optimization methods are implicitly committed to selecting relatively simplistic models in a massive parameter space.</p>
+                <details class="abstract">
+                    <summary>Abstract</summary>
+                    <p>Many modern machine learning models appear massively complex at first glance. I argue that the optimization methods used to train them are implicitly committed to selecting relatively simple models from within a massive parameter space. <!-- TODO: replace with the paper's real abstract --></p>
+                </details>
             </div>
             <div class="work-in-progress">
                 <strong>The Epistemic Status of Synthetic Data</strong>
                 <span class="status-tag">Draft in Progress</span>
                 <p style="margin-top: 10px;">This paper explores the increasing role that synthetic data plays across the computational sciences, and offers guidance as to how to think about synthetic data's epistemic deliverances.</p>
+                <details class="abstract">
+                    <summary>Abstract</summary>
+                    <p>Synthetic data plays an increasingly important role across the computational sciences. This paper examines that role and offers guidance on how to think about the epistemic deliverances of synthetic data. <!-- TODO: replace with the paper's real abstract --></p>
+                </details>
             </div>
         </section>
 
