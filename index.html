@@ -279,13 +279,21 @@
         </section>
 
         <section id="works-in-progress">
-            <h2>Works in Progress</h2>
+            <h2>Works in Progress (email me for drafts)</h2>
             <div class="work-in-progress">
-                <strong>Statistical Practice in the Sciences</strong>
+                <strong>The Epistemic Status of Synthetic Data</strong>
                 <span class="status-tag">Under Review</span>
                 <details class="abstract">
                     <summary>Abstract</summary>
-                    <p>This paper examines how statistical methods are actually used across the sciences and how current practice bears on traditional debates in the philosophy of science.</p>
+                    <p>Research in the computational sciences increasingly relies on tools from machine learning (ML) to analyze large datasets and extract latent patterns that are cognitively inaccessible to human scientists. However, ML tools typically require massive amounts of data to achieve reliable performance, often outrunning the data available in these fields. To compensate for the deficit of available data, researchers have increasingly turned to synthetic data generation as a potential solution. In this paper, using case studies across various scientific fields, I examine the increasing role of synthetic data in the computational sciences and argue that we currently lack an account that characterizes the epistemic value of synthetic data. Drawing on tools from ML theory, I then propose an account of epistemic value in which the value of synthetic data is a function of the structure of the target phenomenon, the model architecture used to generate the data, and the downstream task the data will be used for. As synthetic data is increasingly utilized throughout the computational sciences, properly characterizing the epistemic value of synthetic data is of increased importance for both philosophers of science and practitioners of ML, providing a potential avenue for future research and collaboration in this burgeoning area of applied science.</p>
+                </details>
+            </div>
+            <div class="work-in-progress">
+                <strong>Signal and Noise in the Sciences</strong>
+                <span class="status-tag">Draft in Progress</span>
+                <details class="abstract">
+                    <summary>Abstract</summary>
+                    <p>A standard conception of data is that they consist of one or more relatively stable signals that one is trying to extract or model, combined with noise that interferes with that modeling. A significant amount of work in statistical inference aims to formalize our intuitive abilities to distinguish between signal and noise, and develop frameworks to reliably distinguish between signal and noise in a given dataset. Implicit in much statistical practice is the assumption that there is a fact of the matter about what is signal vs. noise. In this paper, however, we argue that this implicit assumption is too simple. We provide a taxonomy of multiple distinct conceptual grounds for distinguishing between signal and noise, explore how these are related, and suggest that the choice of conceptualization - and hence, the choice of statistical method - is a value-laden, pragmatic choice to be made by scientists depending on the use case. That is, we contend that there is not a unique, privileged way to distinguish signal from noise in a dataset, but also that scientists are not free to choose any pattern whatsoever for the signal. There are multiple, but not infinitely many, ways to decompose a dataset into signal and noise, and the choice among those options should depend on the interests, goals, and capabilities of scientists. </p>
                 </details>
             </div>
             <div class="work-in-progress">
@@ -293,15 +301,15 @@
                 <span class="status-tag">Draft in Progress</span>
                 <details class="abstract">
                     <summary>Abstract</summary>
-                    <p>Many modern machine learning models appear massively complex at first glance. I argue that the optimization methods used to train them are implicitly committed to selecting relatively simple models from within a massive parameter space.</p>
+                    <p>This paper revisits the classic prediction-accommodation debate in the philosophy of science, which has typically been framed in terms of the temporal relationship between model selection and data collection. In the context of machine learning (ML), I argue that this framing mislocates the source of epistemic credit for modern neural networks. Leveraging research in the foundations of ML, I argue that philosophers ought to eschew the traditional predictivist-accommodationist framing and instead direct their attention to the content of the model's inductive commitments given its implicit regularization structure. What matters is what the model is implicitly committed to, rather than when a specific model is committed to.</p>
                 </details>
             </div>
             <div class="work-in-progress">
-                <strong>The Epistemic Status of Synthetic Data</strong>
+                <strong>Data Leakage and the Independence of Model Benchmarking</strong>
                 <span class="status-tag">Draft in Progress</span>
                 <details class="abstract">
                     <summary>Abstract</summary>
-                    <p>Synthetic data plays an increasingly important role across the computational sciences. This paper examines that role and offers guidance on how to think about the epistemic deliverances of synthetic data.</p>
+                    <p>Developing modern machine learning models typically involves an iterative two-step process of training and updating model parameters, and evaluating the trained model in an attempt to determine whether the model generalizes to previously unseen data. Data leakage describes scenarios in which information from data used to evaluate the model is present during the training process, which can lead researchers to overestimate model performance. In this paper, I explore the ways that different types of data leakage differentially impact both individual model evaluation and cross-model evaluation via benchmarking tasks. While data leakage is widely acknowledged to impact model evaluation and benchmarking, I argue that even when leakage is guarded against, there is an additional way that the epistemic value of benchmarking can be undermined. This occurs in the presence of inductive basis overlap, which manifests primarily through the shared use of pretrained embeddings. I argue that inductive basis overlap can lead to a novel form of algorithmic monoculture which is invisible to existing auditing frameworks, and show how this form of monoculture can affect scientific research. I close by exploring the connections between these ideas and research on artificial intelligence alignment, arguing that we should broaden the notion of alignment to include mitigation techniques aimed at intervening early in the model development pipeline.</p>
                 </details>
             </div>
         </section>
@@ -342,7 +350,7 @@
     </main>
 
     <footer>
-        <p>Last updated: October 2026</p>
+        <p>Last updated: November 2026</p>
     </footer>
 </body>
 </html>
